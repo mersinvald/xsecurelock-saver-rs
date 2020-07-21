@@ -17,13 +17,15 @@ extern crate log;
 
 use std::env;
 
-use sfml::graphics::{
+pub use sfml;
+
+use self::sfml::graphics::{
     Color,
     RenderTarget,
     RenderWindow,
 };
-use sfml::system::Vector2u;
-use sfml::window::{Style, ContextSettings};
+use self::sfml::system::Vector2u;
+use self::sfml::window::{Style, ContextSettings};
 
 #[cfg(feature = "engine")]
 pub mod engine;
